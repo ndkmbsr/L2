@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88DCF55E-CCB8-42CF-BD6F-334735187C1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YemekSepeti2</RootNamespace>
+    <AssemblyName>YemekSepeti2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Firma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma.Designer.cs">
+      <DependentUpon>Firma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musterii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musterii.Designer.cs">
+      <DependentUpon>Musterii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uyelik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uyelik.Designer.cs">
+      <DependentUpon>Uyelik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yonetici.Designer.cs">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Firma.resx">
+      <DependentUpon>Firma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musterii.resx">
+      <DependentUpon>Musterii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Uyelik.resx">
+      <DependentUpon>Uyelik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yonetici.resx">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\müşteri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\müşteri1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sirin-yemekler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ascibasi_011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aşçı.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\müşteri formu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sipariş hazır.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sepet.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adana-Kebab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezo-gelin-corbasi-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cig_kofte %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cağ-kebabı_343558.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icli_kofte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vejetaryan-pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pide2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izmir köfte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\framboazlı-yaş-pasta-b4071.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yas-pasta-05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karışık yemekler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yeni uye.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

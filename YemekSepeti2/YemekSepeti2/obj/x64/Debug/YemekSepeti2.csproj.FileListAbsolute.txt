@@ -1,0 +1,24 @@
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\bin\x64\Debug\YemekSepeti2.exe
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\bin\x64\Debug\YemekSepeti2.pdb
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x64\Debug\ResolveAssemblyReference.cache
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.Firma.resources
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.Form1.resources
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.Properties.Resources.resources
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x64\Debug\GenerateResource.read.1.tlog
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x64\Debug\GenerateResource.write.1.tlog
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.exe
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.pdb
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.Yonetici.resources
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.Musterii.resources
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.Uyelik.resources
+G:\NİDA\DERS NOTLARI\2.sınıf dersler\c#\C#projelerim\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.pdb
+G:\NİDA\DERS NOTLARI\2.sınıf dersler\c#\C#projelerim\YemekSepeti2\YemekSepeti2\bin\x64\Debug\YemekSepeti2.exe
+G:\NİDA\DERS NOTLARI\2.sınıf dersler\c#\C#projelerim\YemekSepeti2\YemekSepeti2\bin\x64\Debug\YemekSepeti2.pdb
+G:\NİDA\DERS NOTLARI\2.sınıf dersler\c#\C#projelerim\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.Firma.resources
+G:\NİDA\DERS NOTLARI\2.sınıf dersler\c#\C#projelerim\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.Form1.resources
+G:\NİDA\DERS NOTLARI\2.sınıf dersler\c#\C#projelerim\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.Musterii.resources
+G:\NİDA\DERS NOTLARI\2.sınıf dersler\c#\C#projelerim\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.Properties.Resources.resources
+G:\NİDA\DERS NOTLARI\2.sınıf dersler\c#\C#projelerim\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.Uyelik.resources
+G:\NİDA\DERS NOTLARI\2.sınıf dersler\c#\C#projelerim\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.Yonetici.resources
+G:\NİDA\DERS NOTLARI\2.sınıf dersler\c#\C#projelerim\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.csproj.GenerateResource.Cache
+G:\NİDA\DERS NOTLARI\2.sınıf dersler\c#\C#projelerim\YemekSepeti2\YemekSepeti2\obj\x64\Debug\YemekSepeti2.exe

@@ -1,0 +1,10 @@
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x86\Debug\YemekSepeti2.Firma.resources
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x86\Debug\YemekSepeti2.Form1.resources
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x86\Debug\YemekSepeti2.Properties.Resources.resources
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\bin\Debug\YemekSepeti2.exe
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\bin\Debug\YemekSepeti2.pdb
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x86\Debug\YemekSepeti2.exe
+C:\Users\nida\Desktop\YemekSepeti2\YemekSepeti2\obj\x86\Debug\YemekSepeti2.pdb
