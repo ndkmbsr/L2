@@ -1,0 +1,269 @@
+#include <iostream>
+#include <fstream>
+#include <stack>
+#include <vector>
+#include <queue>
+#include <string>
+using namespace std;
+class Hucre
+{
+public:
+	int indis;
+	vector <int> V1; //komþu hücreler
+	int deger;	
+};
+int main()
+{
+	ifstream dosya;
+	string hucreDegeri;
+	queue <int> degerler;
+	vector <int> yedek;	
+	vector <Hucre> hucreler2;
+	stack <int> gezilenler, komsular, komsularyedek;
+	int gecici, gecici2, satir, sutun, boyut,  sayac2 = 0;
+	dosya.open("maze5x5-2.txt", ios::in);
+	if (dosya.fail())
+	{
+		cout << "Dosya Acilamadi." << endl;
+		exit(1);//Programý Hemen Sonlandýr
+	}
+	else
+	{
+		while (dosya >> hucreDegeri)
+		{
+			gecici = atoi(hucreDegeri.c_str());
+			degerler.push(gecici);
+		}	
+		dosya.close();
+		satir = degerler.front();
+		degerler.pop();
+		sutun = degerler.front();
+		degerler.pop();
+		boyut = satir*sutun;
+		while (degerler.size() > 0)
+		{
+			gecici2 = degerler.front();
+			yedek.push_back(gecici2);
+			degerler.pop();
+		}
+	}
+	for (int i = 0; i < yedek.size(); i++)
+	{
+		Hucre H2;
+		switch (yedek[i])
+		{
+		case 0:
+		{
+				  H2.deger = yedek[i];
+				  H2.indis = sayac2;
+				  if (sayac2 + sutun < satir*sutun)					
+						  H2.V1.push_back(sayac2 + sutun);				
+				  if (i%satir != (satir - 1))				 
+						  H2.V1.push_back(sayac2 + 1);			
+				  if (sayac2 >= satir)				 
+						  H2.V1.push_back(sayac2 - satir);				 
+				  if (i%satir != 1)
+						 H2.V1.push_back(sayac2 - 1);				 
+				  break;
+		}
+		case 1:
+		{
+				  H2.deger = yedek[i];
+				  H2.indis = sayac2;
+				  if ((sayac2 + sutun) < satir*sutun)				 
+					  H2.V1.push_back(sayac2 + sutun);			
+				  if (sayac2 >= satir)
+					  H2.V1.push_back(sayac2 - satir);				
+				  if (sayac2%satir != 0)				
+					  H2.V1.push_back(sayac2 - 1);				  
+				  break;
+		}
+		case 2:
+		{
+				  H2.deger = yedek[i];
+				  H2.indis = sayac2;
+				  if (sayac2 + sutun < satir*sutun)
+					 H2.V1.push_back(sayac2 + sutun);				
+				  if (i%satir != (satir - 1))				 
+					 H2.V1.push_back(sayac2 + 1);			
+				  if (i%satir != 0)
+					 H2.V1.push_back(sayac2 - 1);				 
+				  break;
+		}
+		case  3:			
+		{
+				   H2.deger = yedek[i];
+				   H2.indis = sayac2;
+				   if (sayac2 + sutun < (satir*sutun))
+					   H2.V1.push_back(sayac2 + sutun);				  
+				   if (sayac2%satir != 0)
+					   H2.V1.push_back(sayac2 - 1);				  
+				   break;
+		}
+		case 4:
+		{
+				  H2.deger = yedek[i];
+				  H2.indis = sayac2;
+				  if (sayac2 + sutun < satir*sutun)
+					  H2.V1.push_back(sayac2 + sutun);				
+				  if (i%satir != (satir - 1))
+					  H2.V1.push_back(sayac2 + 1);				  
+				  if (i%satir != 0)
+					  H2.V1.push_back(i - satir);
+				  break;
+		}
+		case 5:
+		{
+				  H2.deger = yedek[i];
+				  H2.indis = sayac2;
+				  if (sayac2 + sutun < satir*sutun)
+					  H2.V1.push_back(sayac2 + satir);				
+				  if (sayac2 >= satir)
+					  H2.V1.push_back(sayac2 - satir);				 
+				  break;
+		}
+		case  6:
+		{
+				   H2.deger = yedek[i];
+				   H2.indis = sayac2;
+				   if ((sayac2 + sutun) < satir*sutun)				
+						H2.V1.push_back(sayac2 + sutun);				  
+				   if (sayac2%satir != satir - 1)
+						   H2.V1.push_back(sayac2 + 1);				 
+				   break;
+		}
+		case  7:
+		{
+				   H2.deger = yedek[i];
+				   H2.indis = sayac2;
+				   if (sayac2 + sutun < satir*sutun)
+					   H2.V1.push_back(sayac2 + sutun);				 
+				   break;
+		}
+		case  8:
+		{
+				   H2.deger = yedek[i];
+				   H2.indis = sayac2;
+				   if (sayac2%satir != (satir - 1))		
+					   H2.V1.push_back(sayac2 + 1);				
+				   if (sayac2 >= sutun)
+					   H2.V1.push_back(sayac2 - sutun);				 
+				   if (sayac2%satir != 0)
+					   H2.V1.push_back(sayac2 - 1);				
+				   break;
+		}
+		case 9:
+		{
+				  H2.deger = yedek[i];
+				  H2.indis = sayac2;
+				  if (sayac2 >= satir)
+					  H2.V1.push_back(sayac2 - satir);				
+				  if (sayac2%satir != 0)
+					  H2.V1.push_back(sayac2 - 1);				
+				  break;
+		}
+		case  10:
+		{
+					H2.deger = yedek[i];
+					H2.indis = sayac2;
+					if (i%satir != (satir - 1))
+						H2.V1.push_back(sayac2 + 1);				
+					if (i%satir != 0)
+						H2.V1.push_back(sayac2 - 1);			
+					break;
+		}
+		case 11:
+		{
+				   H2.deger = yedek[i];
+				   H2.indis = sayac2;
+				   if (i%satir != 0)
+					   H2.V1.push_back(sayac2 - 1);				
+				   break;
+		}
+		case 12:
+		{
+				   H2.deger = yedek[i];
+				   H2.indis = sayac2;
+				   if (sayac2%satir != (satir - 1))
+					   H2.V1.push_back(sayac2 + 1);			
+				   if (sayac2 >= satir)
+					   H2.V1.push_back(sayac2 - satir);				
+				   break;
+		}
+		case  13:
+		{
+					H2.deger = yedek[i];
+					H2.indis = sayac2;
+					if (sayac2 >= satir)
+						H2.V1.push_back(sayac2 - satir);					
+					break;
+		}
+		case 14:
+		{
+				   H2.deger = yedek[i];
+				   H2.indis = sayac2;
+				   if (i%satir != (satir - 1))
+					   H2.V1.push_back(sayac2 + 1);				 
+				   break;
+		}
+		case 15:
+		{
+				   H2.deger = yedek[i];
+				   H2.indis = sayac2;
+				   break;
+		}
+		}
+		sayac2++;
+		hucreler2.push_back(H2);
+	}
+	cout << "-------labirentte dolasmaya baþladik---------" << endl;
+	gezilenler.push(hucreler2[0].indis);
+	int y = gezilenler.top();
+	int gecmis = 0;
+	int x = hucreler2[0].indis;
+	int geciciIndis;
+	komsular.push(-1);
+	int *ziyaretDurumu = new int[boyut*boyut];
+	for (int i = 0; i < boyut*boyut; i++)
+		ziyaretDurumu[i] = 0;
+	int sayi = 0;
+	while (x != boyut - 1)
+	{
+		komsular.pop();		
+		for (int j = hucreler2[x].V1.size() - 1; j >= 0; j--)
+		{
+			geciciIndis = hucreler2[x].V1[j];
+			if (ziyaretDurumu[geciciIndis] == 0)
+			{
+				komsular.push(geciciIndis);				
+				ziyaretDurumu[geciciIndis] = 1;
+				sayi++;
+			}
+		}
+		if (hucreler2[x].V1.size() != 1 && sayi>0)
+			gezilenler.push(x);
+		x = komsular.top();
+		sayi = 0;
+	}
+	cout << "\n\n\n-----------Cikis Bulundu---------" << endl;
+	gezilenler.push(boyut - 1);
+	int a = gezilenler.top();
+	komsularyedek.push(a);
+	gezilenler.pop();
+	while (gezilenler.size() > 0)
+	{
+		int b = gezilenler.top();
+		if (b == a - 1 || b == a - sutun || b == a + 1 || b == a + satir)
+			komsularyedek.push(b);
+		gezilenler.pop();
+		a = komsularyedek.top();
+
+	}
+	while (komsularyedek.size() > 0)
+	{
+		cout << komsularyedek.top() << " ";
+		komsularyedek.pop();
+	}
+	cout << endl;	
+	return 0;
+}
