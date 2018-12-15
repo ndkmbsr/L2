@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OnlineBiletModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="OnlineBiletModelStoreContainer">
+          <EntitySet Name="dbo_YolcuYasDurumu" EntityType="OnlineBiletModel.Store.dbo_YolcuYasDurumu" store:Type="Tables" Schema="dbo" Table="dbo.YolcuYasDurumu" />
+          <EntitySet Name="Hareket" EntityType="OnlineBiletModel.Store.Hareket" store:Type="Tables" store:Schema="dbo" store:Name="Hareket">
+            <DefiningQuery>SELECT 
+      [Hareket].[Yon] AS [Yon], 
+      [Hareket].[YolcuID] AS [YolcuID], 
+      [Hareket].[KalkisID] AS [KalkisID], 
+      [Hareket].[VarisID] AS [VarisID]
+      FROM [dbo].[Hareket] AS [Hareket]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="KalkisDurumu" EntityType="OnlineBiletModel.Store.KalkisDurumu" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Kart" EntityType="OnlineBiletModel.Store.Kart" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Pesin" EntityType="OnlineBiletModel.Store.Pesin" store:Type="Tables" store:Schema="dbo" store:Name="Pesin">
+            <DefiningQuery>SELECT 
+      [Pesin].[KartID] AS [KartID], 
+      [Pesin].[YolcuID] AS [YolcuID], 
+      [Pesin].[Pesin] AS [Pesin]
+      FROM [dbo].[Pesin] AS [Pesin]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Taksit" EntityType="OnlineBiletModel.Store.Taksit" store:Type="Tables" store:Schema="dbo" store:Name="Taksit">
+            <DefiningQuery>SELECT 
+      [Taksit].[KartID] AS [KartID], 
+      [Taksit].[YolcuID] AS [YolcuID], 
+      [Taksit].[TaksitSayisi] AS [TaksitSayisi]
+      FROM [dbo].[Taksit] AS [Taksit]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VarisDurumu" EntityType="OnlineBiletModel.Store.VarisDurumu" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="YolcuBilgileri" EntityType="OnlineBiletModel.Store.YolcuBilgileri" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="dbo_YolcuYasDurumu">
+          <Key>
+            <PropertyRef Name="DurumID" />
+          </Key>
+          <Property Name="DurumID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DurumAdi" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="YolcuID" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OnlineBilet.dbo.Hareket' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Hareket">
+          <Key>
+            <PropertyRef Name="Yon" />
+            <PropertyRef Name="YolcuID" />
+            <PropertyRef Name="KalkisID" />
+            <PropertyRef Name="VarisID" />
+          </Key>
+          <Property Name="Yon" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="YolcuID" Type="int" Nullable="false" />
+          <Property Name="KalkisID" Type="int" Nullable="false" />
+          <Property Name="VarisID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KalkisDurumu">
+          <Key>
+            <PropertyRef Name="KalkisID" />
+          </Key>
+          <Property Name="KalkisID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="KalkisYeriAdi" Type="varchar(max)" Nullable="false" />
+          <Property Name="KalkisTarihi" Type="datetime" Nullable="false" />
+          <Property Name="DonusTarihi" Type="datetime" />
+          <Property Name="YolcuID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Kart">
+          <Key>
+            <PropertyRef Name="KartID" />
+          </Key>
+          <Property Name="KartID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="KartAdi" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OnlineBilet.dbo.Pesin' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Pesin">
+          <Key>
+            <PropertyRef Name="KartID" />
+            <PropertyRef Name="YolcuID" />
+            <PropertyRef Name="Pesin" />
+          </Key>
+          <Property Name="KartID" Type="int" Nullable="false" />
+          <Property Name="YolcuID" Type="int" Nullable="false" />
+          <Property Name="Pesin" Type="float" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'OnlineBilet.dbo.Taksit' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Taksit">
+          <Key>
+            <PropertyRef Name="KartID" />
+            <PropertyRef Name="YolcuID" />
+            <PropertyRef Name="TaksitSayisi" />
+          </Key>
+          <Property Name="KartID" Type="int" Nullable="false" />
+          <Property Name="YolcuID" Type="int" Nullable="false" />
+          <Property Name="TaksitSayisi" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VarisDurumu">
+          <Key>
+            <PropertyRef Name="VarisID" />
+          </Key>
+          <Property Name="VarisID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="VarisYeriAdi" Type="varchar(max)" Nullable="false" />
+          <Property Name="YolcuID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="YolcuBilgileri">
+          <Key>
+            <PropertyRef Name="YolcuID" />
+          </Key>
+          <Property Name="YolcuID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="YolcuAdi" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="YolcuSoyadi" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="TC" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Cinsiyet" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="DogumTarihi" Type="datetime" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OnlineBiletModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="OnlineBiletEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="dbo_YolcuYasDurumu" EntityType="OnlineBiletModel.dbo_YolcuYasDurumu" />
+          <EntitySet Name="Hareket" EntityType="OnlineBiletModel.Hareket" />
+          <EntitySet Name="KalkisDurumu" EntityType="OnlineBiletModel.KalkisDurumu" />
+          <EntitySet Name="Kart" EntityType="OnlineBiletModel.Kart" />
+          <EntitySet Name="Pesin" EntityType="OnlineBiletModel.Pesin" />
+          <EntitySet Name="Taksit" EntityType="OnlineBiletModel.Taksit" />
+          <EntitySet Name="VarisDurumu" EntityType="OnlineBiletModel.VarisDurumu" />
+          <EntitySet Name="YolcuBilgileri" EntityType="OnlineBiletModel.YolcuBilgileri" />
+        </EntityContainer>
+        <EntityType Name="dbo_YolcuYasDurumu">
+          <Key>
+            <PropertyRef Name="DurumID" />
+          </Key>
+          <Property Name="DurumID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="DurumAdi" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="YolcuID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Hareket">
+          <Key>
+            <PropertyRef Name="Yon" />
+            <PropertyRef Name="YolcuID" />
+            <PropertyRef Name="KalkisID" />
+            <PropertyRef Name="VarisID" />
+          </Key>
+          <Property Name="Yon" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="YolcuID" Type="Int32" Nullable="false" />
+          <Property Name="KalkisID" Type="Int32" Nullable="false" />
+          <Property Name="VarisID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KalkisDurumu">
+          <Key>
+            <PropertyRef Name="KalkisID" />
+          </Key>
+          <Property Name="KalkisID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="KalkisYeriAdi" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="KalkisTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DonusTarihi" Type="DateTime" Precision="3" />
+          <Property Name="YolcuID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Kart">
+          <Key>
+            <PropertyRef Name="KartID" />
+          </Key>
+          <Property Name="KartID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="KartAdi" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Pesin">
+          <Key>
+            <PropertyRef Name="KartID" />
+            <PropertyRef Name="YolcuID" />
+            <PropertyRef Name="Pesin1" />
+          </Key>
+          <Property Name="KartID" Type="Int32" Nullable="false" />
+          <Property Name="YolcuID" Type="Int32" Nullable="false" />
+          <Property Name="Pesin1" Type="Double" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Taksit">
+          <Key>
+            <PropertyRef Name="KartID" />
+            <PropertyRef Name="YolcuID" />
+            <PropertyRef Name="TaksitSayisi" />
+          </Key>
+          <Property Name="KartID" Type="Int32" Nullable="false" />
+          <Property Name="YolcuID" Type="Int32" Nullable="false" />
+          <Property Name="TaksitSayisi" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VarisDurumu">
+          <Key>
+            <PropertyRef Name="VarisID" />
+          </Key>
+          <Property Name="VarisID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="VarisYeriAdi" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="YolcuID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="YolcuBilgileri">
+          <Key>
+            <PropertyRef Name="YolcuID" />
+          </Key>
+          <Property Name="YolcuID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="YolcuAdi" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="YolcuSoyadi" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TC" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Cinsiyet" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DogumTarihi" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OnlineBiletModelStoreContainer" CdmEntityContainer="OnlineBiletEntities">
+          <EntitySetMapping Name="dbo_YolcuYasDurumu">
+            <EntityTypeMapping TypeName="OnlineBiletModel.dbo_YolcuYasDurumu">
+              <MappingFragment StoreEntitySet="dbo_YolcuYasDurumu">
+                <ScalarProperty Name="DurumID" ColumnName="DurumID" />
+                <ScalarProperty Name="DurumAdi" ColumnName="DurumAdi" />
+                <ScalarProperty Name="YolcuID" ColumnName="YolcuID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hareket">
+            <EntityTypeMapping TypeName="OnlineBiletModel.Hareket">
+              <MappingFragment StoreEntitySet="Hareket">
+                <ScalarProperty Name="Yon" ColumnName="Yon" />
+                <ScalarProperty Name="YolcuID" ColumnName="YolcuID" />
+                <ScalarProperty Name="KalkisID" ColumnName="KalkisID" />
+                <ScalarProperty Name="VarisID" ColumnName="VarisID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KalkisDurumu">
+            <EntityTypeMapping TypeName="OnlineBiletModel.KalkisDurumu">
+              <MappingFragment StoreEntitySet="KalkisDurumu">
+                <ScalarProperty Name="KalkisID" ColumnName="KalkisID" />
+                <ScalarProperty Name="KalkisYeriAdi" ColumnName="KalkisYeriAdi" />
+                <ScalarProperty Name="KalkisTarihi" ColumnName="KalkisTarihi" />
+                <ScalarProperty Name="DonusTarihi" ColumnName="DonusTarihi" />
+                <ScalarProperty Name="YolcuID" ColumnName="YolcuID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kart">
+            <EntityTypeMapping TypeName="OnlineBiletModel.Kart">
+              <MappingFragment StoreEntitySet="Kart">
+                <ScalarProperty Name="KartID" ColumnName="KartID" />
+                <ScalarProperty Name="KartAdi" ColumnName="KartAdi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pesin">
+            <EntityTypeMapping TypeName="OnlineBiletModel.Pesin">
+              <MappingFragment StoreEntitySet="Pesin">
+                <ScalarProperty Name="KartID" ColumnName="KartID" />
+                <ScalarProperty Name="YolcuID" ColumnName="YolcuID" />
+                <ScalarProperty Name="Pesin1" ColumnName="Pesin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Taksit">
+            <EntityTypeMapping TypeName="OnlineBiletModel.Taksit">
+              <MappingFragment StoreEntitySet="Taksit">
+                <ScalarProperty Name="KartID" ColumnName="KartID" />
+                <ScalarProperty Name="YolcuID" ColumnName="YolcuID" />
+                <ScalarProperty Name="TaksitSayisi" ColumnName="TaksitSayisi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VarisDurumu">
+            <EntityTypeMapping TypeName="OnlineBiletModel.VarisDurumu">
+              <MappingFragment StoreEntitySet="VarisDurumu">
+                <ScalarProperty Name="VarisID" ColumnName="VarisID" />
+                <ScalarProperty Name="VarisYeriAdi" ColumnName="VarisYeriAdi" />
+                <ScalarProperty Name="YolcuID" ColumnName="YolcuID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="YolcuBilgileri">
+            <EntityTypeMapping TypeName="OnlineBiletModel.YolcuBilgileri">
+              <MappingFragment StoreEntitySet="YolcuBilgileri">
+                <ScalarProperty Name="YolcuID" ColumnName="YolcuID" />
+                <ScalarProperty Name="YolcuAdi" ColumnName="YolcuAdi" />
+                <ScalarProperty Name="YolcuSoyadi" ColumnName="YolcuSoyadi" />
+                <ScalarProperty Name="TC" ColumnName="TC" />
+                <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+                <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,89 @@
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe.config
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.pdb
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csprojResolveAssemblyReference.cache
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Form1.resources
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Properties.Resources.resources
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csproj.GenerateResource.Cache
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.exe
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.pdb
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe.config
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.exe
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csprojResolveAssemblyReference.cache
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Form1.resources
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Properties.Resources.resources
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csproj.GenerateResource.Cache
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.pdb
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.pdb
+C:\Users\Nida\Desktop\OnlineBilet\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Admin.resources
+C:\Users\esinnn\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe.config
+C:\Users\esinnn\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.exe
+C:\Users\esinnn\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.pdb
+C:\Users\esinnn\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe
+C:\Users\esinnn\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.pdb
+C:\Users\esinnn\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csprojResolveAssemblyReference.cache
+C:\Users\esinnn\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Admin.resources
+C:\Users\esinnn\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Form1.resources
+C:\Users\esinnn\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Properties.Resources.resources
+C:\Users\esinnn\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csproj.GenerateResource.Cache
+C:\Users\Nida\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe.config
+C:\Users\Nida\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.exe
+C:\Users\Nida\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.pdb
+C:\Users\Nida\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe
+C:\Users\Nida\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.pdb
+C:\Users\Nida\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csprojResolveAssemblyReference.cache
+C:\Users\Nida\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Admin.resources
+C:\Users\Nida\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Form1.resources
+C:\Users\Nida\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Properties.Resources.resources
+C:\Users\Nida\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csproj.GenerateResource.Cache
+C:\Users\Nida\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Koltuk.resources
+C:\Users\Nida\Desktop\OnlineBilet (1)\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Firma.resources
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe.config
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.exe
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.pdb
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csprojResolveAssemblyReference.cache
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Admin.resources
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Firma.resources
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Form1.resources
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Kayit.resources
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Koltuk.resources
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Properties.Resources.resources
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csproj.GenerateResource.Cache
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.pdb
+C:\Users\Nida\Desktop\IsletimSistemleriSoru2\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Ara.resources
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe.config
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.exe
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.pdb
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.pdb
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csprojResolveAssemblyReference.cache
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Admin.resources
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Ara.resources
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Form1.resources
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Kayit.resources
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Koltuk.resources
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Properties.Resources.resources
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csproj.GenerateResource.Cache
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.mdf
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet_log.ldf
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Firma1.resources
+C:\Users\esinnn\Desktop\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Uye.resources
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe.config
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.exe
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.pdb
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.mdf
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet_log.ldf
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.exe
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\bin\Debug\OnlineBilet.pdb
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csprojResolveAssemblyReference.cache
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Admin.resources
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Ara.resources
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Firma1.resources
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Form1.resources
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Kayit.resources
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Koltuk.resources
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Properties.Resources.resources
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.Uye.resources
+C:\Users\Nida\Desktop\esin22012014\esin\OnlineBilet\OnlineBilet\obj\Debug\OnlineBilet.csproj.GenerateResource.Cache
